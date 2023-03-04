@@ -9,10 +9,11 @@ const Footer = () => {
           display: "flex",
           justifyContent: "space-between",
           color: "#fff",
-          alignItems: "center"
+          alignItems: "center",
+          padding: "3rem 5rem"
         }}
       >
-        <h4 style={{ marginLeft: "3rem"}}>Taro Yoshino 2023</h4>
+        <h4>Taro Yoshino 2023</h4>
         <div>
           <ul
             style={{ display: "flex", color: "white", listStyle: "none", marginRight: "1rem" }}

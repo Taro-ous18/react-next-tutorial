@@ -1,3 +1,4 @@
+import { Certification } from "./Certification";
 import { IntroduceMyself } from "./IntroduceMyself";
 import { ThingsOfInterst } from "./ThingsOfInterst";
 
@@ -9,6 +10,7 @@ const Content = () => {
         <p>こんにちは</p>
         <p>こんにちは</p>
         <IntroduceMyself/>
+        <Certification/>
         <ThingsOfInterst/>
       </main>
     </div>

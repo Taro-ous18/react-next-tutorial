@@ -29,7 +29,7 @@ const index = () => {
         </h4>
         <img
           src="/MatsuyamaCastle.png"
-          style={{ width: "83%", margin: "0 auto", opacity: "0.4", backgroundColor: "red" }}
+          style={{ width: "83%", margin: "0 auto", backgroundColor: "red" }}
         />
       </div>
       <Header />

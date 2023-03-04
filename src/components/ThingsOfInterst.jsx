@@ -8,7 +8,7 @@ const ThingsOfInterst = () => {
         fontSize: "1.3rem",
       }}
     >
-      <h2 style={{ fontSize: "2rem", color: "#005689" }}>
+      <h2 style={{ fontSize: "2rem", color: "#005689", textShadow: "-1.5px 1.5px #fff"}}>
         勉強中・興味のあること
       </h2>
       <div
