@@ -2,19 +2,22 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div>
+    <>
       <div
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          width: "80%",
+          width: "83%",
           margin: "0 auto",
           backgroundColor: "#272932",
-          height: "80px"
+          height: "4rem",
+          position: "sticky",
+          top: "0",
+          padding: "2.5rem"
         }}
       >
-        <h1 className="header-name">Taro Yoshino</h1>
+        <Link href="/" className="header-name">Taro Yoshino</Link>
         <div>
           <Link href="/about" className="link about">
             About
@@ -27,7 +30,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
