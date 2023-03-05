@@ -2,6 +2,8 @@ import { Content } from "@/components/Content";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Head from "next/head";
+import { Typography, Box } from "@mui/material";
+
 
 const index = () => {
   return (
@@ -13,25 +15,27 @@ const index = () => {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         />
       </Head>
-      <div>
-        <h4
-          style={{
+      <Box>
+        <Typography
+          sx={{
             position: "absolute",
             top: "3rem",
-            left: "1rem",
+            left: {xs: "0.2rem", sm: "0.5rem", md: "0.5rem"},
             zIndex: 10,
-            marginLeft: "10rem",
+            marginLeft: {xs: "2rem", sm: "3rem", md: "5rem"},
             color: "white",
-            fontSize: "2.3rem",
+            fontSize: {xs: "1.3rem", sm: "1.7rem", md: "2.3rem"},
+            fontWeight: 600,
+            textShadow: "-1px 1px black"
           }}
         >
           Born & raised in Matsuyama City
-        </h4>
+        </Typography>
         <img
           src="/MatsuyamaCastle.png"
-          style={{ width: "83%", margin: "0 auto", backgroundColor: "red" }}
+          style={{ width: "100%", margin: "0 auto", backgroundColor: "red" }}
         />
-      </div>
+      </Box>
       <Header />
       <Content />
       <Footer/>

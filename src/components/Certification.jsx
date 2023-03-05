@@ -1,25 +1,40 @@
+import { Typography, Box } from "@mui/material";
+
 const Certification = () => {
   return (
     <>
-      <div
-        style={{
-          padding: "3rem",
-          fontWeight: 600,
+      <Box
+        sx={{
+          p: "3rem",
+          fontWeight: "600",
           fontSize: "1.5rem",
+          fontWeight: 600,
           backgroundColor: "#ffeaee",
           margin: "0 auto",
-          padding: "2rem 3rem",
-          lineHeight: "5rem"
+          padding: "2rem 4rem",
+          lineHeight: "5rem",
         }}
       >
-        <h4 style={{ color: "#005689", textShadow: "-1px 1px #fff"}}>資格</h4>
+        <Typography
+          sx={{
+            textShadow: "-1px 1px #fff",
+            color: "#005689",
+            fontSize: { xs: "1.7rem", sm: "2rem" },
+            fontWeight: 600
+          }}
+        >
+          資格
+        </Typography>
         <div>
-            <ul>
-                <li>TOEIC 900点 （2020/12）</li>
-            </ul>
+          <ul>
+            <li>
+              <Typography sx={{ fontSize: { xs: "1rem", sm: "1.2rem" },fontWeight: 600 }}>
+                TOEIC 900点（2020/12）
+              </Typography>
+            </li>
+          </ul>
         </div>
-
-      </div>
+      </Box>
     </>
   );
 };

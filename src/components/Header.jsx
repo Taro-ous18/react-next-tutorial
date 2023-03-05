@@ -1,35 +1,38 @@
 import Link from "next/link";
+import { Typography, Box } from "@mui/material";
 
 const Header = () => {
   return (
     <>
-      <div
-        style={{
+      <Box
+        sx={{
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          width: "83%",
+          width: "100%",
           margin: "0 auto",
           backgroundColor: "#272932",
           height: "4rem",
           position: "sticky",
           top: "0",
-          padding: "2.5rem"
+          padding: "2.5rem",
         }}
       >
-        <Link href="/" className="header-name">Taro Yoshino</Link>
-        <div>
+        <Link href="/" className="header-name">
+          <Typography sx={{ fontSize: {xs: "1rem", sm: "1rem", md: "2rem"}}}>Taro Yoshino</Typography>
+        </Link>
+        <Box sx={{ fontSize: {xs: "0.5rem", sm: "1rem", md: "10rem" }, display: "flex"}}>
           <Link href="/about" className="link about">
-            About
+            <Typography>about</Typography>
           </Link>
           <Link href="/projects" className="link projects">
-            Projects
+            <Typography>projects</Typography>
           </Link>
           <Link href="/sns" className="link sns">
-            SNS
+            <Typography>sns</Typography>
           </Link>
-        </div>
-      </div>
+        </Box>
+      </Box>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Typography, Box, List } from "@mui/material";
 
 const Footer = () => {
   const ITEMS = [
@@ -18,37 +19,35 @@ const Footer = () => {
 
   return (
     <>
-      <div
-        style={{
-          width: "83%",
-          margin: "0 auto",
+      <Box
+        sx={{
+          width: "100%",
           backgroundColor: "#272932",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: { xs: "center", md: "end" },
           color: "#fff",
           alignItems: "center",
           padding: "3rem 5rem",
         }}
       >
-        <h4>Taro Yoshino 2023</h4>
-        <div>
-          <ul
-            style={{
-              display: "flex",
-              color: "white",
-              listStyle: "none",
-              marginRight: "1rem",
-            }}
-            className="footer-sns"
-          >
-            {ITEMS.map((item) => {
-              return (
-                <Link style={{width: "100%"}} href={item.url}>{item.img}</Link>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
+        <Box
+          sx={{
+            // display: "flex",
+            color: "white",
+            listStyle: "none",
+            marginRight: { xs: "0", sm: "1rem" },
+          }}
+          className="footer-sns"
+        >
+          {ITEMS.map((item) => {
+            return (
+              <Link style={{ width: "100%" }} href={item.url}>
+                {item.img}
+              </Link>
+            );
+          })}
+        </Box>
+      </Box>
     </>
   );
 };

@@ -1,45 +1,66 @@
+import { Typography, Box } from "@mui/material";
+
 const ThingsOfInterst = () => {
   return (
-    <div
+    <Box
       style={{
         backgroundColor: "#ffe066",
-        padding: "3rem 3rem",
+        padding: "4rem 3rem",
         fontWeight: 600,
-        fontSize: "1.3rem",
+        fontSize: "1.2rem",
       }}
     >
-      <h2 style={{ fontSize: "2rem", color: "#005689", textShadow: "-1.5px 1.5px #fff"}}>
+      <Typography
+        sx={{
+          fontSize: {xs: "1.7rem", sm: "2rem", md: "2rem"},
+          color: "#005689",
+          textShadow: "-1.5px 1.5px #fff",
+          fontWeight: 600,
+          padding: "1.5rem"
+        }}
+      >
         勉強中・興味のあること
-      </h2>
-      <div
-        style={{
+      </Typography>
+      <Box
+        sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          display: {sm: "flex"},
         }}
       >
-        <div
+        <Box
           className="interest-container"
-          style={{ backgroundColor: "#fff", width: "50%", marginRight: "20px" }}
+          sx={{
+            backgroundColor: "#fff",
+            width: {xs: "100%", sm: "50%"},
+            marginRight: {sm: "1rem"},
+            marginBottom: {xs: "1.5rem", sm: "0"},
+            fontSize: { xs: "1.2rem", sm: "1rem", md: "1.3rem" },
+          }}
         >
           <ul className="thingsInterestedIn">
             <li>PHP/Laravel</li>
-            <li>Javascript/React</li>
+            <li>JavaScript/React</li>
             <li>HTML/CSS</li>
           </ul>
-        </div>
-        <div
+        </Box>
+        <Box
           className="interest-container"
-          style={{ backgroundColor: "#fff", width: "50%" }}
+          sx={{
+            backgroundColor: "#fff",
+            width: {xs: "100%", sm: "50%"},
+            fontSize: { xs: "1.2rem", sm: "1rem", md: "1.3rem" },
+          }}
         >
           <ul className="thingsInterestedIn">
             <li>UI/UX Design</li>
             <li>英語</li>
             <li>などなど</li>
           </ul>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
