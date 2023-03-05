@@ -19,20 +19,6 @@
   margin: 0 1rem;
 }
 
-.link::after {
-  position: absolute;
-  bottom: 2px;
-  content: '';
-  width: 10%;
-  height: 0.3rem;
-  background: #ea5757;
-  transform: scale(0, 1);
-  transform-origin: center right left;
-  transition: transform .3s;
-}
-.link:hover::after {
-  transform: scale(1, 1);
-}
 
 .thingsInterestedIn {
   line-height: 4rem;
@@ -45,4 +31,10 @@
 
 .footer-sns li{
   margin: 1rem
+}
+
+.fa-brands {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: #fff;
 }

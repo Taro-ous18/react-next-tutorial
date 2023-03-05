@@ -1,4 +1,21 @@
+import Link from "next/link";
+
 const Footer = () => {
+  const ITEMS = [
+    {
+      img: <i class="fa-brands fa-github"></i>,
+      url: "https://github.com/Taro-ous18",
+    },
+    {
+      img: <i class="fa-brands fa-linkedin"></i>,
+      url: "https://www.linkedin.com/in/%E5%A4%AA%E9%83%8E-%E5%90%89%E9%87%8E-15b553249/",
+    },
+    {
+      img: <i class="fa-brands fa-facebook"></i>,
+      url: "https://facebook.com",
+    },
+  ];
+
   return (
     <>
       <div
@@ -10,20 +27,25 @@ const Footer = () => {
           justifyContent: "space-between",
           color: "#fff",
           alignItems: "center",
-          padding: "3rem 5rem"
+          padding: "3rem 5rem",
         }}
       >
         <h4>Taro Yoshino 2023</h4>
         <div>
           <ul
-            style={{ display: "flex", color: "white", listStyle: "none", marginRight: "1rem" }}
+            style={{
+              display: "flex",
+              color: "white",
+              listStyle: "none",
+              marginRight: "1rem",
+            }}
             className="footer-sns"
           >
-            <li style={{ marginRight: "1rem", }}>
-              1<img src="" alt="" />
-            </li>
-            <li>2</li>
-            <li>3</li>
+            {ITEMS.map((item) => {
+              return (
+                <Link style={{width: "100%"}} href={item.url}>{item.img}</Link>
+              );
+            })}
           </ul>
         </div>
       </div>
