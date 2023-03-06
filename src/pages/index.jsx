@@ -13,16 +13,20 @@ const index = () => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
+          rel="stylesheet"
+        />
       </Head>
-      <Box>
-        <section>
+      <Box sx={{ overflow: "scroll", position: "sticky", top: 0, zIndex: -1}}>
           <Typography
             sx={{
               position: "absolute",
-              top: { xs: "1rem", sm: "2rem", md: "3rem" },
-              left: { xs: "0.2rem", sm: "0.5rem", md: "3rem" },
+              top: { xs: "-4rem", sm: "-3rem", md: "-2rem" },
+              left: { xs: "-2rem", sm: "-2rem", md: "-1rem" },
               zIndex: 10,
-              marginLeft: { xs: "2rem", sm: "3rem", md: "5rem" },
               color: "white",
               fontSize: { xs: "1.3rem", sm: "2rem", md: "3rem" },
               fontWeight: 600,
@@ -39,13 +43,12 @@ const index = () => {
               width: "100%",
               margin: "0 auto",
               backgroundColor: "red",
-              // position: "stincky",
-              // top: 0,
+              position: "stincky",
+              top: 0,
               // backgroundSize: "100%",
               // display: "block",
             }}
           />
-        </section>
       </Box>
       <Header />
       <Content />
