@@ -1,5 +1,5 @@
 import { Certification } from "./Certification";
-import { IntroduceMyself } from "./IntroduceMyself";
+import { Introduction } from "./Introduction";
 import { ThingsOfInterst } from "./ThingsOfInterst";
 import { Typography, Box } from "@mui/material";
 
@@ -7,14 +7,11 @@ import { Typography, Box } from "@mui/material";
 const Content = () => {
   return (
     <Box style={{ backgroundColor: "white", width: "100%", margin: "0 auto"}}>
-      <main>
-        <p>こんにちは</p>
-        <p>こんにちは</p>
-        <p>こんにちは</p>
-        <IntroduceMyself/>
+      <Box>
+        <Introduction/>
         <Certification/>
         <ThingsOfInterst/>
-      </main>
+      </Box>
     </Box>
   );
 };

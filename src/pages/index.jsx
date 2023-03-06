@@ -20,7 +20,7 @@ const index = () => {
           rel="stylesheet"
         />
       </Head>
-      <Box sx={{ overflow: "scroll", position: "sticky", top: 0, zIndex: -1}}>
+      <Box sx={{ position: "sticky", top: 0, zIndex: -1}}>
           <Typography
             sx={{
               position: "absolute",
