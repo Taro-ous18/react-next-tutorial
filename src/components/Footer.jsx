@@ -23,27 +23,20 @@ const Footer = () => {
         sx={{
           width: "100%",
           backgroundColor: "#272932",
-          display: "flex",
-          justifyContent: { xs: "center", md: "end" },
           color: "#fff",
-          alignItems: "center",
           padding: "3rem 5rem",
         }}
       >
         <Box
           sx={{
-            // display: "flex",
-            color: "white",
-            listStyle: "none",
-            marginRight: { xs: "0", sm: "1rem" },
+           display: "flex",
+           justifyContent: {xs: "center", md: "end"},
           }}
           className="footer-sns"
         >
           {ITEMS.map((item) => {
             return (
-              <Link style={{ width: "100%" }} href={item.url}>
-                {item.img}
-              </Link>
+                <Link style={{padding: "1rem"}} href={item.url}>{item.img}</Link>
             );
           })}
         </Box>

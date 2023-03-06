@@ -15,21 +15,21 @@ const Header = () => {
           height: "4rem",
           position: "sticky",
           top: "0",
-          padding: "2.5rem",
+          padding: {xs: "1rem", sm :"2.5rem"},
         }}
       >
         <Link href="/" className="header-name">
-          <Typography sx={{ fontSize: {xs: "1rem", sm: "1rem", md: "2rem"}}}>Taro Yoshino</Typography>
+          <Typography sx={{ fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>Taro Yoshino</Typography>
         </Link>
         <Box sx={{ fontSize: {xs: "0.5rem", sm: "1rem", md: "10rem" }, display: "flex"}}>
           <Link href="/about" className="link about">
-            <Typography>about</Typography>
+            <Typography sx={{ fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>about</Typography>
           </Link>
           <Link href="/projects" className="link projects">
-            <Typography>projects</Typography>
+            <Typography sx={{ fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>projects</Typography>
           </Link>
           <Link href="/sns" className="link sns">
-            <Typography>sns</Typography>
+            <Typography sx={{ fontSize: {xs: "1rem", sm: "1.5rem", md: "2rem"}}}>sns</Typography>
           </Link>
         </Box>
       </Box>

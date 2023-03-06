@@ -2,6 +2,8 @@
   /* background-color: #1c233a; */
   background-color: rgb(197, 194, 194);
   overflow: scroll;
+  max-width: 1200px;
+  margin: 0 auto
 }
 
 .header-name {
@@ -29,12 +31,7 @@
   border: solid 5px #2b59c3
 }
 
-.footer-sns li{
-  margin: 1rem
-}
-
 .fa-brands {
   font-size: 2rem;
-  margin-right: 2rem;
   color: #fff;
 }
